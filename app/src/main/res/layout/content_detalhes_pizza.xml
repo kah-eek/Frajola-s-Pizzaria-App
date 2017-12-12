@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.creativesoftwares.frajolaspizzaria.app.activity.DetalhesPizzaActivity"
+    tools:showIn="@layout/activity_detalhes_pizza"
+    android:background="@color/darkGray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_value"
+                android:textColor="@color/colorPrimary"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/coin"
+                    android:textColor="@color/colorAccent"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_preco_produto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="@color/colorAccent"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_rating"
+                android:textColor="@color/colorPrimary"/>
+
+            <RatingBar
+                android:id="@+id/rating_bar_detalhes_produto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:paddingLeft="2dp"
+                style="?android:attr/ratingBarStyleSmall"
+                />
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_descricao_produto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/defaultText"
+            android:layout_margin="@dimen/text_margin"
+            android:textColor="@color/colorPrimary"/>
+
+        <RatingBar
+            android:id="@+id/rating_bar_classificar_produto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@color/darkOrange"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <Button
+            android:id="@+id/btnSendDataAboutProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="evaluate"
+            android:layout_marginTop="80dp"
+            android:text="@string/evaluate"
+            android:background="@color/colorPrimaryDark"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/image_view_produto"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/darkBlue"
+        />
+
+    <TextView
+        android:id="@+id/txt_titulo_produto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/titulo_produto"
+        android:layout_below="@id/image_view_produto"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif-smallcaps"
+        />
+
+    <TextView
+        android:id="@+id/txt_preco_produto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/preco"
+        android:textColor="@color/brightGreen"
+        android:layout_below="@id/image_view_produto"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:id="@+id/txt_descricao_produto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/txt_titulo_produto"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/test"/>
+
+    <RatingBar
+        android:id="@+id/rating_bat_produto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txt_descricao_produto"
+        style="?android:attr/ratingBarStyleIndicator"
+        />
+
+</RelativeLayout>
